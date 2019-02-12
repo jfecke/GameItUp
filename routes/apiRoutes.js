@@ -39,6 +39,7 @@ module.exports = function(app) {
         //If location is within the required distance it is added to an array 
         var counter = 1;
         if (miles <= req.body.distance) {
+          locations[i].dataValues.distance = miles;
           distanceArray.push(locations[i]);
         }
       }
