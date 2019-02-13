@@ -120,7 +120,7 @@ $(document).ready(function () {
               var edit = $("<button>").text("Edit");
               edit.attr("id", "edit" + results[i].id);
               edit.addClass("editgame");
-              var deleteme = $("<button>").text("Delete");
+              var deleteme = $("<button>").text("X");
               deleteme.attr("id", "delete"+results[i].id);
               deleteme.addClass("deletegame");
               deleteme.on("click", function(evemt) {
